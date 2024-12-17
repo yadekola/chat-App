@@ -181,3 +181,53 @@ button:disabled {
     font-weight: 300;
     padding: 12px 24px 0 24px;
 }
+
+
+/* Responsive Media Queries */
+
+/* For small devices (phones, <600px) */
+@media screen and (max-width: 600px) {
+    .chat {
+        flex-direction: column;
+    }
+    
+    .chat__sidebar {
+        height: auto;
+        width: 100%;
+        overflow-y: auto;
+    }
+    
+    .chat__main {
+        max-height: 70vh;
+    }
+    
+    .centered-form__box {
+        width: 90%;
+    }
+    
+    .compose input {
+        margin: 0;
+    }
+}
+
+/* For medium devices (tablets, 600px to 900px) */
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .chat__sidebar {
+        width: 180px;
+    }
+    
+    .chat__main {
+        max-height: 80vh;
+    }
+    
+    .centered-form__box {
+        width: 300px;
+    }
+}
+
+/* For large devices (desktops, >900px) */
+@media screen and (min-width: 900px) {
+    .chat__sidebar {
+        width: 225px;
+    }
+}
